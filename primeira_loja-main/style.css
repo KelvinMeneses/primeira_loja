@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+@media only screen and (max-width: 800px) {
+}
+ body{
+    color: white;
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+    "cabeca cabeca cabeca"
+    "secundario principal principal"
+    "rodape rodape rodape";
+    grid-template-columns: "200px 150px 100px";
+    grid-template-rows: "150px auto auto";
+}
+
+aside{
+    text-align: center;
+    grid-area: secundario;
+    background-color: blue;
+    width: 200px;
+    height: 400px;
+}
+header{
+    text-align: center;
+    grid-area: cabeca;
+    color: white;
+    height:200px;
+    grid-area: cabeca;
+    background-color: blue;
+}
+
+main{
+    text-align: center;
+    grid-area:principal;
+    color: white;
+    height: 400px;
+    grid-area: principal;
+    background-color: black;
+}
+
+footer{
+    text-align: center;
+    grid-area:rodape;
+    color: white;
+    height: 200px;
+    grid-area: rodape;
+    background-color: brown;
+}
