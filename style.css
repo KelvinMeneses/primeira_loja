@@ -1,18 +1,68 @@
-
 *{
     margin: 0;
 }
-@media screen: (width);
-body{
+@media only screen and (max-width: 800px) {
+}
+ body{
+    color: white;
     display: grid;
+    gap: 15px;
     grid-template-areas:
     "cabeca cabeca cabeca"
-    "principal principal principal"
+    "secundario principal principal"
     "rodape rodape rodape";
-    grid-template-columns: "200px 200px 200px";
-    grid-template-rows: "auto auto auto";
+    grid-template-columns: "200px 150px 100px";
+    grid-template-rows: "150px auto auto";
+}
+.caixa_mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 15px;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(160, 155, 160, 0.151);
+    
+}
+
+.card img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card a{
+    border-radius: 30px;
+    background-color: black;
+    display: block;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 1s;
+}
+.card a:hover{
+    background-color: rgb(65, 64, 64);
+    color: rgb(7, 7, 7);
+}
+aside{
+    text-align: center;
+    grid-area: secundario;
+    background-color: blue;
+    width: 200px;
+    height: 400px;
 }
 header{
+    text-align: center;
+    grid-area: cabeca;
     color: white;
     height:200px;
     grid-area: cabeca;
@@ -20,15 +70,19 @@ header{
 }
 
 main{
-    color: white;
-    height: 400px;
+    text-align: center;
+    grid-area:principal;
+    color: rgb(17, 17, 17);
+    position: relative;
     grid-area: principal;
-    background-color: black;
+    background-color: rgb(243, 243, 243);
 }
 
 footer{
+    text-align: center;
+    grid-area:rodape;
     color: white;
     height: 200px;
     grid-area: rodape;
-    background-color: brown;
+    background-color: rgb(36, 36, 36);
 }
