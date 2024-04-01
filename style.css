@@ -14,6 +14,10 @@
     grid-template-columns: "200px 150px 100px";
     grid-template-rows: "150px auto auto";
 }
+.carrinho{
+    height: 70px;
+}
+
 .caixa_mae{
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +34,7 @@
     align-items: center;
     margin: 20px;
     background-color: rgba(160, 155, 160, 0.151);
-    
+   
 }
 
 .card img{
@@ -47,7 +51,7 @@
     text-align: center;
     text-decoration: none;
     color: antiquewhite;
-    transition: 1s;
+    transition: 200ms;
 }
 .card a:hover{
     background-color: rgb(65, 64, 64);
@@ -64,9 +68,9 @@ header{
     text-align: center;
     grid-area: cabeca;
     color: white;
-    height:200px;
+    position: relative;
     grid-area: cabeca;
-    background-color: blue;
+    background-color: white;
 }
 
 main{
@@ -75,7 +79,7 @@ main{
     color: rgb(17, 17, 17);
     position: relative;
     grid-area: principal;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
 }
 
 footer{
