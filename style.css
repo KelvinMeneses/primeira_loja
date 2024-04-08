@@ -15,15 +15,17 @@
     grid-template-rows: "150px auto auto";
 }
 .carrinho{
+    filter: invert(1);
     position: absolute;
-    right: 40px;
-    top:  5px;
+    right: 10%;
+    top:  10%;
     height: 50px;
 }
 .icone{
+    filter: invert(1);
     position: absolute;
-    right: 100px;
-    top: 5px;
+    right: 5%;
+    top: 10%;
     height: 60px;
 }
 
@@ -70,17 +72,19 @@ aside{
     text-align: center;
     grid-area: secundario;
     background-color: blue;
-    width: 200px;
-    height: 400px;
+    width: 150px;
+    height: 90%;
+    padding: 20px;
+    margin: 20px;
 }
 header{
     text-align: center;
     grid-area: cabeca;
     color: white;
-    position: static;
-    height: 150px;
+    position: relative;
+    padding: 20px;
     grid-area: cabeca;
-    background-color: white;
+    background-color: #333;
 }
 
 main{
@@ -94,9 +98,10 @@ main{
 
 footer{
     text-align: center;
+    position: relative;
     grid-area:rodape;
     color: white;
-    height: 200px;
+    padding: 20px;
     grid-area: rodape;
-    background-color: rgb(36, 36, 36);
+    background-color: #333;
 }
