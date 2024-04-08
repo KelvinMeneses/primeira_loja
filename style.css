@@ -11,8 +11,8 @@
     "cabeca cabeca cabeca"
     "secundario principal principal"
     "rodape rodape rodape";
-    grid-template-columns: "200px 150px 100px";
-    grid-template-rows: "150px auto auto";
+    grid-template-columns: "auto auto auto";
+    grid-template-rows: "auto auto auto";
 }
 .carrinho{
     filter: invert(1);
@@ -36,6 +36,7 @@
 }
 
 .card{
+    box-shadow: 3px 3px 3px #333;
     border-radius: 15px;
     width: 200px;
     height: 350px;
@@ -69,6 +70,7 @@
     color: rgb(7, 7, 7);
 }
 aside{
+    box-shadow: 3px 3px 3px #333;
     text-align: center;
     grid-area: secundario;
     background-color: blue;
