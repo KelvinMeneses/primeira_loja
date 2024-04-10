@@ -70,14 +70,25 @@
     color: rgb(7, 7, 7);
 }
 aside{
+    border-radius: 10px;
     box-shadow: 3px 3px 3px #333;
     text-align: center;
     grid-area: secundario;
-    background-color: blue;
+    background-color: #22276E;
     width: 150px;
     height: 90%;
     padding: 20px;
     margin: 20px;
+}
+aside a{
+    text-decoration: none;
+    color:white;
+}
+aside nav li{
+    align-items:center;
+    color: white;
+    display:block;
+    padding: 20px;
 }
 header{
     text-align: center;
