@@ -90,10 +90,13 @@ aside nav li{
     display:block;
     padding: 20px;
 }
-header{
+header a{
     text-align: center;
-    grid-area: cabeca;
+    text-decoration: none;
     color: white;
+}
+header{
+    grid-area: cabeca;
     position: relative;
     padding: 20px;
     grid-area: cabeca;
@@ -115,6 +118,5 @@ footer{
     grid-area:rodape;
     color: white;
     padding: 20px;
-    grid-area: rodape;
     background-color: #333;
 }

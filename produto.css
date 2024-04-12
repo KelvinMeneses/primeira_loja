@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+}
+@media only screen and (max-width: 800px) {
+}
+ body{
+    color: white;
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+    "cabeca cabeca cabeca"
+    "secundario principal principal"
+    "rodape rodape rodape";
+    grid-template-columns: "auto auto auto";
+    grid-template-rows: "auto auto auto";
+}
+.carrinho{
+    filter: invert(1);
+    position: absolute;
+    right: 10%;
+    top:  10%;
+    height: 50px;
+}
+.icone{
+    filter: invert(1);
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    height: 60px;
+}
+
+.caixa_mae{
+    height: (100vh - 80px);
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.card p{
+    margin-bottom: 60px;
+}
+.card h1{
+    font-size: 50px;
+}
+.card h2{
+    font-size: 30px;
+    font-weight: 500px;
+}
+.card img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card a{
+    border-radius: 20px;
+    background-color: black;
+    display: block;
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 200ms;
+}
+.card a:hover{
+    background-color: rgb(65, 64, 64);
+    color: rgb(7, 7, 7);
+}
+.card2 {
+    width: 100%;
+}
+header a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+header{
+    text-align: center;
+    text-decoration: none;
+    grid-area: cabeca;
+    position: relative;
+    padding: 20px;
+    background-color: #333;
+}
+main{
+    text-align: center;
+    grid-area:principal;
+    color: rgb(17, 17, 17);
+    position: relative;
+    grid-area: principal;
+    background-color: white;
+}
+
+footer{
+    text-align: center;
+    position: static;
+    color: white;
+    padding: 20px;
+    grid-area: rodape;
+    background-color: #333;
+}
