@@ -30,16 +30,17 @@
 }
 
 .caixa_mae{
-    height: (100vh - 80px);
     display: flex;
-    justify-content: center;
-    padding: 5%;
+    flex-wrap: wrap;
+    justify-content: static;
+    align-items: center;
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: 800px;
+    width: 200px;
 }
 .card p{
     margin-bottom: 60px;
@@ -57,12 +58,13 @@
 }
 
 .card a{
+    position: relative;
     border-radius: 20px;
     background-color: black;
     display: block;
     height: 45px;
     width: 120px;
-    text-align: center;
+    align-items: center;
     text-decoration: none;
     color: antiquewhite;
     transition: 200ms;
@@ -97,8 +99,9 @@ main{
 }
 
 footer{
+    grid-area: rodape;
     text-align: center;
-    position: static;
+    position: relative;
     color: white;
     padding: 20px;
     grid-area: rodape;
