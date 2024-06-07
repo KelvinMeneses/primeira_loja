@@ -1,7 +1,15 @@
 *{
     margin: 0;
 }
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 400px) {
+    aside{
+        display: none;
+    }
+    .carrinho {
+        position: absolute;
+        left:10%;
+    }
 }
  body{
     color: white;
@@ -17,7 +25,7 @@
 .carrinho{
     filter: invert(1);
     position: absolute;
-    right: 10%;
+    left: 5%;
     top:  10%;
     height: 50px;
 }
@@ -96,13 +104,13 @@ header a{
     color: white;
 }
 header{
+    text-align: center;
+    text-decoration: none;
     grid-area: cabeca;
     position: relative;
     padding: 20px;
-    grid-area: cabeca;
     background-color: #333;
 }
-
 main{
     text-align: center;
     grid-area:principal;
@@ -113,10 +121,11 @@ main{
 }
 
 footer{
+    grid-area: rodape;
     text-align: center;
     position: relative;
-    grid-area:rodape;
     color: white;
     padding: 20px;
+    grid-area: rodape;
     background-color: #333;
 }
