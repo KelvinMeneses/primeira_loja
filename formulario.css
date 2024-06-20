@@ -16,7 +16,7 @@ body{
 
 .container{
     border-radius: 15px;
-    background-color: white;
+    background-color: whitesmoke;
     width: 60%;
     height: 720px;
     display: flex;
@@ -49,7 +49,7 @@ body{
     padding: 7px 16px;
     border-radius: 5px;
     background-color: #333;
-    /*pra ele mostrar que é clickavel*/
+    /*pra mostrar que é clickavel*/
     cursor: pointer;
 }
 
