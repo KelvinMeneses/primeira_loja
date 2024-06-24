@@ -1,16 +1,28 @@
 *{
     margin: 0;
 }
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 2560px){
+    .menu25{
+        display: none;
+    }
+}
+@media only screen and (max-width: 740px) {
     aside{
         display: none;
     }
     .carrinho {
-        position: absolute;
-        left:10%;
+        display: none;
     }
-}
+    .menu25{
+        display: block;
+        width: 40px;
+        filter: invert(1);
+        position: absolute;
+        left: 5%;
+        top:  25%;
+        height: 40px;
+    }
+    }
  body{
     color: white;
     display: grid;
